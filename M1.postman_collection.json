@@ -1,0 +1,129 @@
+{
+	"info": {
+		"_postman_id": "b9b28975-5abf-4c3c-aaaf-821325c200d3",
+		"name": "M1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43667966"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/product/compararCEP?cep=08773380&productId=p1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Camiseta\",\r\n        \"price\": 500,\r\n        \"active\": true,\r\n        \"category\": \"roupa\",\r\n        \"id\": \"p1\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/product/compararCEP?cep=08773380&productId=p1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"compararCEP"
+					],
+					"query": [
+						{
+							"key": "cep",
+							"value": "08773380"
+						},
+						{
+							"key": "productId",
+							"value": "p1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/product/compararCEP?cep=08773380&productId=p2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Camiseta\",\r\n        \"price\": 500,\r\n        \"active\": true,\r\n        \"category\": \"roupa\",\r\n        \"id\": \"p1\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/product/compararCEP?cep=08773380&productId=p2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"product",
+						"compararCEP"
+					],
+					"query": [
+						{
+							"key": "cep",
+							"value": "08773380"
+						},
+						{
+							"key": "productId",
+							"value": "p2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://viacep.com.br/ws/08773380/json/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"name\": \"Camiseta\",\r\n        \"price\": 500,\r\n        \"active\": true,\r\n        \"category\": \"roupa\",\r\n        \"id\": \"p1\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://viacep.com.br/ws/08773380/json/",
+					"protocol": "https",
+					"host": [
+						"viacep",
+						"com",
+						"br"
+					],
+					"path": [
+						"ws",
+						"08773380",
+						"json",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
